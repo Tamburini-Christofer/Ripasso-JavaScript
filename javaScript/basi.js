@@ -206,4 +206,3 @@ console.log(persona.eta); // 31
     let numeroFormattato = numeroOriginale.toFixed(2); // Arrotonda a 2 cifre decimali
 
     console.log(numeroFormattato); // Stampa: "10.12"
-
