@@ -27,3 +27,6 @@
 // il che significa che il tipo di una variabile viene determinato e può cambiare in fase di esecuzione
 // Questa flessibilità può portare a maggiore velocità di sviluppo ma anche a errori di tipo difficili da individuare. 
 
+/*************************************************************************************************************/
+//TIPIZZAZIONE DI JAVASCRIPT
+/*************************************************************************************************************/
