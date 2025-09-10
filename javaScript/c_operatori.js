@@ -2,58 +2,34 @@
 //OPERATORI RELAZIONALI
 /*************************************************************************************************************/
 // Come confrontiamo due valori?
+// == uguaglianza Se v = 3, allora v == 4 è falso
+let v = 3;
+console.log(v == 4); // false
+console.log(v == 3); // true
 
-// == uguaglianza Se x = 3, allora x == 4 è falso
 
-let x = 3;
-let risultatox = (x == 4); // Questo confronterà 3 e 4
+// > maggiore di Se w = 3, allora w > 4 è falso
+let w = 3;
+console.log(w > 4); // false
+console.log(w > 2); // true
 
-console.log(risultato); // Stampa: false
 
-// != diversità Se x = 3, allora x != 4 è vero
+// < minore di Se y = 3, allora y < 4 è vero
+let y = 3;
+console.log(y < 4); // true
+console.log(y < 2); // false
 
-let a = 3;
-let risultatoa = (a != 4); // Viene valutato come true
-console.log(risultato);
 
-// > maggiore di Se x = 3, allora x > 4 è falso
+// >= maggiore o uguale Se z = 3, allora z >= 4 è falso
+let z = 3;
+console.log(z >= 4); // false
+console.log(z >= 3); // true
 
-let b = 3;
-let isGreaterThan4 = (b > 4); // Questo è falso
 
-console.log("b è " + b);
-console.log("b > 4 è " + isGreaterThan4); // Output: x > 4 è false
-
-// < minore di Se x = 3, allora x < 4 è vero
-
-let c = 3; // Definisci la variabile x
-let d = 4; // Definisci la variabile y
-
-if (x < y) { // Controlla se x è minore di y
-  console.log(`${c} è minore di ${d}. Condizione vera.`); // Questo messaggio verrà stampato
-} else {
-  console.log(`${c} non è minore di ${d}. Condizione falsa.`);
-}
-
-// >= maggiore o uguale Se x = 3, allora x >= 4 è falso
-
-let e = 3;
-
-if (e >= 4) {
-  console.log("e è maggiore o uguale a 4");
-} else {
-  console.log("e è falso perché è minore di 4");
-}
-
-// <= minore o uguale Se x = 3, allora x <= 4 è vero
-
-let f = 3; // Definiamo la variabile x con valore 3
-
-if (f <= 4) { // Controlliamo se x è minore o uguale a 4
-  console.log("f è minore o uguale a 4"); // Questo messaggio verrà visualizzato
-} else {
-  console.log(" non è minore o uguale a 4");
-}
+// <= minore o uguale Se a1 = 3, allora a1 <= 4 è vero
+let a1 = 3;
+console.log(a1 <= 4); // true
+console.log(a1 <= 2); // false
 
 // ATTENZIONE!!!
 
@@ -112,12 +88,18 @@ console.log(j !== "3"); // true
 // && and, “e logico”
 // restituisce vero se e soltanto se entrambi gli operandi sono veri
 
-// Se x = 3, y = 4 allora (x < 4 && y > 5) è falso
+let b1 = 5;
+console.log(b1 > 3 && b1 < 10); // true, perché 5 è maggiore di 3 E minore di 10
+console.log(b1 > 3 && b1 > 10); // false, perché la seconda condizione è falsa
+
 
 // || or, “o logico”
 // restituisce vero se almeno uno degli operandi è vero
 
-// Se x = 3, y = 4 allora (x < 4 || y > 5) è vero
+let b2 = 2;
+console.log(b2 < 3 || b2 > 10); // true, perché la prima condizione è vera
+console.log(b2 > 5 || b2 < 1);  // false, perché entrambe le condizioni sono false
+
 
 // Una condizione può essere formata da uno o più confronti con la combinazione degli:
 
