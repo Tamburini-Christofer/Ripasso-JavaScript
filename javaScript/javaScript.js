@@ -22,11 +22,19 @@
 // Molte keyword sono costituite da parole composte unite senza alcuno spazio o trattino ad esempio: getElementById() 
 // Questo metodo di scrittura è detto camelCase, le lettere maiuscole all’interno della keyword servono per individuare facilmente l’inizio di una parola. 
 
+/*************************************************************************************************************/
+//TIPIZZAZIONE DI JAVASCRIPT
+/*************************************************************************************************************/
 
 // JavaScript è un linguaggio "dinamicamente tipizzato" o "debolmente tipizzato". 
 // il che significa che il tipo di una variabile viene determinato e può cambiare in fase di esecuzione
 // Questa flessibilità può portare a maggiore velocità di sviluppo ma anche a errori di tipo difficili da individuare. 
 
-/*************************************************************************************************************/
-//TIPIZZAZIONE DI JAVASCRIPT
-/*************************************************************************************************************/
+// Le variabili non sono legate a un tipo specifico. 
+// Una variabile può contenere un numero, poi una stringa e successivamente un booleano, cambiando tipo durante l'esecuzione. 
+
+// Conversione implicita:
+
+// JavaScript cerca di convertire i tipi automaticamente quando si eseguono operazioni, il che può portare a risultati inaspettati se non si presta attenzione 
+// ad esempio un'operazione potrebbe restituire la stringa "5" invece del numero 5. 
+
