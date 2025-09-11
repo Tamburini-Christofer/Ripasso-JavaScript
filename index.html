@@ -1,20 +1,436 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ripassso lezioni</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mappa di apprendimento HTML — Percorso</title>
+    <meta name="description"
+        content="Mappa concettuale testuale per imparare HTML: percorso passo-passo, da basi ad argomenti avanzati.">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <script src="javaScript/a_basi.js"></script>
-    <script src="javaScript/b_cicli.js"></script>
-    <script src="javaScript/c_operatori.js"></script>
-    <script src="javaScript/d_array.js"></script>
-    <script src="javaScript/e_funzioni.js"></script>
-    <script src="javaScript/f_DOM.js"></script>
-    <script src="javaScript/listaMetodi.js"></script>
-    <script src="javaScript/listaDOMSelector.js"></script>
+    <div class="wrap">
+        <header>
+            <div class="card" style="padding:10px 14px;display:inline-block"><strong>HTML</strong></div>
+            <div style="flex:1">
+                <h1>Mappa di apprendimento HTML</h1>
+                <p class="lead">ARGOMENTI BASE DA CONOSCERE IN HTML</p>
+                <p class="lead">nota bene: il file html e css sono stati realizzati con ChatGpr per una questione di tempo. <br>
+                I file JavaScript, invece, sono stati realizzati da me,. con l'aiuto di ChatGpt, screen del corso, google e documentazione 
+            ufficiale</p>
+            </div>
+        </header>
+
+        <main class="card" role="main">
+            <p class="muted">Clicca sulle sezioni per espandere i dettagli. Segui l'ordine consigliato: dalla radice
+                alle foglie.</p>
+
+            <details open>
+                <summary>
+                    <div class="summary-inner">
+                        <span class="node"><span class="badge">1</span> <strong>Radice — Basi di HTML</strong></span>
+                        <span class="muted">Fondamenta</span>
+                    </div>
+                </summary>
+                <ul class="tree">
+                    <li><strong>Struttura pagina</strong> — &lt;!DOCTYPE html&gt;, &lt;html&gt;, &lt;head&gt;,
+                        &lt;body&gt;</li>
+                    <li><strong>Tag fondamentali</strong> — &lt;h1&gt;...&lt;h6&gt;, &lt;p&gt;, &lt;br&gt;, &lt;hr&gt;
+                    </li>
+                    <li><strong>Commenti</strong> — &lt;!-- commento --&gt;</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <div class="summary-inner">
+                        <span class="node"><span class="badge">2</span> <strong>Testo e contenuti</strong></span>
+                        <span class="muted">Markup del contenuto</span>
+                    </div>
+                </summary>
+                <ul class="tree">
+                    <li><strong>Formattazione</strong> — &lt;strong&gt;, &lt;em&gt;, &lt;b&gt;, &lt;i&gt;</li>
+                    <li><strong>Liste</strong> — &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</li>
+                    <li><strong>Link</strong> — &lt;a href="..."&gt; e attributi rel, target</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <div class="summary-inner">
+                        <span class="node"><span class="badge">3</span> <strong>Media</strong></span>
+                        <span class="muted">Immagini, audio, video</span>
+                    </div>
+                </summary>
+                <ul class="tree">
+                    <li>&lt;img&gt; — src, alt, width, height (accessibilità)</li>
+                    <li>&lt;audio&gt; &amp; &lt;video&gt; — attributi controls, preload, loop</li>
+                    <li>&lt;iframe&gt; — incorporamento (attenzione alla sicurezza e al sandbox)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <div class="summary-inner">
+                        <span class="node"><span class="badge">4</span> <strong>Struttura semantica
+                                (HTML5)</strong></span>
+                        <span class="muted">Buone pratiche</span>
+                    </div>
+                </summary>
+                <ul class="tree">
+                    <li>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;,
+                        &lt;footer&gt;</li>
+                    <li>&lt;div&gt; vs &lt;span&gt; — quando usare elementi non semantici</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <div class="summary-inner">
+                        <span class="node"><span class="badge">5</span> <strong>Tabelle</strong></span>
+                        <span class="muted">Dati tabellari</span>
+                    </div>
+                </summary>
+                <ul class="tree">
+                    <li>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt; — struttura e accessibilità</li>
+                    <li>Attributi utili — rowspan, colspan</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <div class="summary-inner">
+                        <span class="node"><span class="badge">6</span> <strong>Form e input</strong></span>
+                        <span class="muted">Interazione utente</span>
+                    </div>
+                </summary>
+                <ul class="tree">
+                    <li>&lt;form&gt; — action, method (GET/POST)</li>
+                    <li>Input: &lt;input type="text|email|password|file|checkbox|radio"&gt;</li>
+                    <li>&lt;label&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;button&gt;</li>
+                    <li>Validazione HTML5 (required, pattern, type=email)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <div class="summary-inner">
+                        <span class="node"><span class="badge">7</span> <strong>Attributi globali &amp;
+                                Accessibilità</strong></span>
+                        <span class="muted">Attraversabilità e SEO</span>
+                    </div>
+                </summary>
+                <ul class="tree">
+                    <li>id, class, title, lang, hidden</li>
+                    <li>Attributi ARIA essenziali (aria-label, role)</li>
+                    <li>alt per immagini e testo alternativo</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <div class="summary-inner">
+                        <span class="node"><span class="badge">8</span> <strong>Argomenti avanzati</strong></span>
+                        <span class="muted">Meta, integrazione e best practice</span>
+                    </div>
+                </summary>
+                <ul class="tree">
+                    <li>Meta tag: charset, viewport, description (SEO)</li>
+                    <li>Link a CSS (&lt;link rel="stylesheet"&gt;) e script (&lt;script src="..."&gt;)</li>
+                    <li>Responsive basics e immagini <code>srcset</code></li>
+                    <li>Progressive enhancement, performance e sicurezza (CSP, sanitizzazione)</li>
+                </ul>
+            </details>
+
+            <div class="hint">Suggerimento rapido: studia esercitandoti con mini-progetti (pagina personale, form di
+                contatto, galleria immagini). Il modo tradizionale di imparare è provare e correggere — continua così!
+            </div>
+
+            <!doctype html>
+ <!-- ----------------------------------------------------------------------------------------------------------------------------------------            -->
+    
+ <header>
+      <div class="card" style="padding:10px 14px;display:inline-block"><strong>CSS</strong></div>
+      <div style="flex:1">
+        <h1>Mappa di apprendimento CSS</h1>
+        <p class="lead">Percorso ordinato per imparare i concetti principali di CSS, dai fondamenti alle tecniche più avanzate.</p>
+      </div>
+    </header>
+
+    <main class="card" role="main">
+      <p class="muted">Clicca sulle sezioni per espandere i dettagli. Segui l'ordine consigliato per costruire una base solida.</p>
+
+      <details open>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">1</span> <strong>Fondamenti CSS</strong></span>
+            <span class="muted">Basi</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Collegare CSS all'HTML: <code>&lt;link&gt;</code>, inline, internal</li>
+          <li>Sintassi base: selettore { proprietà: valore; }</li>
+          <li>Unità di misura: px, %, em, rem, vh, vw</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">2</span> <strong>Selettori</strong></span>
+            <span class="muted">Targeting degli elementi</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Selettori di tipo, classe, ID</li>
+          <li>Selettori combinatori: discendente, figlio, fratello</li>
+          <li>Pseudo-classi: :hover, :focus, :nth-child()</li>
+          <li>Pseudo-elementi: ::before, ::after</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">3</span> <strong>Box Model</strong></span>
+            <span class="muted">Struttura di ogni elemento</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Contenuto, padding, bordo, margine</li>
+          <li>box-sizing: content-box vs border-box</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">4</span> <strong>Colori, sfondi e testo</strong></span>
+            <span class="muted">Stile base</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Colori: nome, hex, rgb, hsl</li>
+          <li>Background: colore, immagine, posizione, repeat</li>
+          <li>Tipografia: font-family, font-size, line-height, text-align</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">5</span> <strong>Layout</strong></span>
+            <span class="muted">Disposizione degli elementi</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Display: block, inline, inline-block, none</li>
+          <li>Position: static, relative, absolute, fixed, sticky</li>
+          <li>Flexbox: container e item, justify-content, align-items</li>
+          <li>Grid: righe, colonne, area</li>
+          <li>Float e clear (metodi tradizionali)</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">6</span> <strong>Transizioni e animazioni</strong></span>
+            <span class="muted">Dinamismo</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Transizioni: transition-property, duration, timing-function</li>
+          <li>Transform: translate, rotate, scale</li>
+          <li>Animazioni con @keyframes</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">7</span> <strong>Responsive Design</strong></span>
+            <span class="muted">Adattabilità</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Media queries</li>
+          <li>Unità relative (%, em, rem, vh, vw)</li>
+          <li>Layout fluidi e immagini responsive</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">8</span> <strong>Avanzato</strong></span>
+            <span class="muted">Tecniche moderne</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Variabili CSS (custom properties)</li>
+          <li>Funzioni utili: calc(), clamp(), min(), max()</li>
+          <li>CSS avanzato: clip-path, filter, backdrop-filter</li>
+          <li>Gestione temi (light/dark mode)</li>
+        </ul>
+      </details>
+
+      <div class="hint">Consiglio: costruisci piccoli progetti pratici come card, navbar o layout di blog. La pratica costante è il modo più solido per padroneggiare i CSS.</div>
+
+      <footer>File: <strong>css_learning_map.html</strong> — pronto per essere aggiunto al tuo repository GitHub.</footer>
+    </main>
+  </div>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="card" style="padding:10px 14px;display:inline-block"><strong>JavaScript</strong></div>
+      <div style="flex:1">
+        <h1>Mappa di apprendimento JavaScript</h1>
+        <p class="lead">Percorso ordinato per imparare i concetti principali di JavaScript, dai fondamenti alle tecniche avanzate.</p>
+      </div>
+    </header>
+
+    <main class="card" role="main">
+      <p class="muted">Espandi le sezioni per consultare i vari argomenti consigliati. Segui l'ordine per una comprensione progressiva.</p>
+
+      <details open>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">1</span> <strong>Fondamenti</strong></span>
+            <span class="muted">Le basi del linguaggio</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Storia e ruolo di JavaScript</li>
+          <li>Includere JS in HTML: <code>&lt;script&gt;</code></li>
+          <li>Console e debugging base</li>
+          <li>Sintassi, variabili (let, const, var)</li>
+          <li>Tipi di dato: string, number, boolean, null, undefined, object</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">2</span> <strong>Operatori e strutture di controllo</strong></span>
+            <span class="muted">Logica di base</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Operatori aritmetici, logici e di confronto</li>
+          <li>if/else, switch</li>
+          <li>Loop: for, while, do...while</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">3</span> <strong>Funzioni</strong></span>
+            <span class="muted">Riutilizzare codice</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Dichiarazione e chiamata di funzioni</li>
+          <li>Parametri e valori di ritorno</li>
+          <li>Funzioni anonime ed arrow functions</li>
+          <li>Scope e closure</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">4</span> <strong>Oggetti e array</strong></span>
+            <span class="muted">Strutture dati</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Creazione e proprietà degli oggetti</li>
+          <li>Metodi e this</li>
+          <li>Array: metodi principali (push, pop, map, filter, reduce)</li>
+          <li>Iterazioni sugli array</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">5</span> <strong>DOM e Eventi</strong></span>
+            <span class="muted">Interazione con la pagina</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Selezione elementi: getElementById, querySelector</li>
+          <li>Modifica contenuto e stile</li>
+          <li>Gestione eventi: addEventListener</li>
+          <li>Event bubbling e delegation</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">6</span> <strong>Programmazione asincrona</strong></span>
+            <span class="muted">Gestione del tempo</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>setTimeout, setInterval</li>
+          <li>Callback</li>
+          <li>Promises</li>
+          <li>Async/Await</li>
+          <li>Fetch API (richieste HTTP)</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">7</span> <strong>Concetti avanzati</strong></span>
+            <span class="muted">Approfondimenti</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>ES6+ features (destructuring, spread, modules)</li>
+          <li>Gestione errori con try/catch</li>
+          <li>JSON e localStorage</li>
+          <li>Classi e prototipi</li>
+          <li>Moduli JavaScript (import/export)</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <div class="summary-inner">
+            <span class="node"><span class="badge">8</span> <strong>Strumenti e buone pratiche</strong></span>
+            <span class="muted">Per lavorare meglio</span>
+          </div>
+        </summary>
+        <ul class="tree">
+          <li>Console avanzata e debugging con DevTools</li>
+          <li>Linting e formattazione (ESLint, Prettier)</li>
+          <li>GitHub e versioning</li>
+          <li>NPM e gestione pacchetti</li>
+          <li>Framework e librerie (React, Vue, Angular — introduzione)</li>
+        </ul>
+      </details>
+
+      <div class="hint">Suggerimento: esercitati con piccoli progetti come un to-do list, una calcolatrice o una galleria di immagini interattiva. La pratica costante è la chiave per padroneggiare JavaScript.</div>
+
+        <script src="javaScript/a_basi.js"></script>
+        <script src="javaScript/b_cicli.js"></script>
+        <script src="javaScript/c_operatori.js"></script>
+        <script src="javaScript/d_array.js"></script>
+        <script src="javaScript/e_funzioni.js"></script>
+        <script src="javaScript/f_DOM.js"></script>
+        <script src="javaScript/listaMetodi.js"></script>
+        <script src="javaScript/listaDOMSelector.js"></script>
+    </main>
+  </div>
 </body>
+
 </html>
